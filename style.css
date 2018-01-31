@@ -1,9 +1,15 @@
+*{
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
 /* Navigation styling */
 /* Style the list */
 ul.breadcrumb {
     list-style: none;
     background-color: lightsteelblue;
-    text-align: right;
+    text-align: center;
+    padding:0;
 }
 
 /* Display list items side by side */
@@ -32,11 +38,27 @@ ul.breadcrumb li a:hover {
 
 body{
     background-color: lightsteelblue;
+    font-family: 'Bemount', 'Russo One', 'Helvetica', 'Calibri', sans-serif;
+}
+
+.head{
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    width: 100%;
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 481px) {
     .container{
-        display: block;
+        display: grid;
     }
 }
