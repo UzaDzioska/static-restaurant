@@ -45,6 +45,7 @@ ul.breadcrumb li a:hover {
 body {
     background-color: lightsteelblue;
     font-family: 'Rockwell', 'Helvetica', 'Calibri', serif;
+    color: white;
 }
 
 .head {
@@ -72,7 +73,7 @@ img {
 }
 
 .button:hover {
-    background-color: lightsteelblue;
+    background-color: #c9e1f0;
 }
 
 .modal {
@@ -132,15 +133,23 @@ h1 {
     }
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 769px) {
     .container {
         display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    
+    header{
+        grid-column:1/-1;
+    }
+    
+    .nav{
+        grid-column:1/-1;
     }
     
     .all{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-column-gap: .5em;
+        grid-column: 2;
+        grid-template-columns: repeat(3,1fr);
     }
     
     .section{
