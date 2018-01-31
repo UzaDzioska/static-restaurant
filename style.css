@@ -1,0 +1,42 @@
+/* Navigation styling */
+/* Style the list */
+ul.breadcrumb {
+    list-style: none;
+    background-color: lightsteelblue;
+    text-align: right;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 1em;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    color: white;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    background-color: lightsteelblue;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .container{
+        display: block;
+    }
+}
